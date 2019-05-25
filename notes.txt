@@ -1,0 +1,1 @@
+INSERT INTO `goods`(item_name, id_group, photo, description, price, qty) VALUES ('Дуовит',1,null,null,100,100000)
