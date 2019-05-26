@@ -35,6 +35,12 @@ $field = mysqli_field_count($conn);
 $skus     = [];
 $names    = [];
 $groups   = [];
+$photos   = [];
+$descs    = [];
+$prices   = [];
+$qtys     = [];
+
+
 while($row = mysqli_fetch_array($query)) {
 	for($i = 0; $i < $field; $i++) {
 		if ($i==1) {
@@ -50,41 +56,67 @@ while($row = mysqli_fetch_array($query)) {
                         array_push($groups, $group_name);
                 }
                 if ($i==4) {
-                        $group_name = $row[mysqli_fetch_field_direct($query, $i)->name];
-                        array_push($groups, $group_name);
+                        $photo = $row[mysqli_fetch_field_direct($query, $i)->name];
+                        array_push($photos, $photo);
                 }
                 if ($i==5) {
-                        $group_name = $row[mysqli_fetch_field_direct($query, $i)->name];
-                        array_push($groups, $group_name);
+                        $desc = $row[mysqli_fetch_field_direct($query, $i)->name];
+                        array_push($descs, $desc);
                 }
                 if ($i==6) {
-                        $group_name = $row[mysqli_fetch_field_direct($query, $i)->name];
-                        array_push($groups, $group_name);
+                        $price = $row[mysqli_fetch_field_direct($query, $i)->name];
+                        array_push($prices, $price);
                 }
                 if ($i==7) {
-                        $group_name = $row[mysqli_fetch_field_direct($query, $i)->name];
-                        array_push($groups, $group_name);
+                        $qty = $row[mysqli_fetch_field_direct($query, $i)->name];
+                        array_push($qtys, $qty);
                 }
-
-
-
 	}
 }
-
+$goodies_len = sizeof($skus);
 
 echo "<html>";
 echo "<head>";
 echo "<title>";
 echo "eShop";
 echo "</title>";
-echo "<styles>";
-echo "</styles>";
+echo "<style type='text/css'>";
+echo ".menu {";
+echo "  position:absolute;";
+echo "  left: 20px;";
+echo "}";
+echo ".goods {";
+echo "	position:absolute;";
+echo "	left: 100px;";
+echo "}";
+echo "</style>";
 echo "</head>";
 echo "<body>";
-echo "logotype.png";
-echo "eShop";
-echo "menu";
-echo "group 1";
-echo "group 2";
+echo "<div id='logo'>logotype.png</div>";
+echo "<div id='myheader'>eShop</div>";
+echo "<div id='menu' class='menu'>menu";
+echo "<div class='menuone'>group 1</div>";
+echo "<br>";
+echo "<div class='menuone'>group 2</div>";
+echo "</div>";
+echo "<div class='goods'>";
+echo "<table>";
+echo "<tr>";
+echo "<td>SKU</td>";
+echo "<td>item name</td>";
+echo "<td>group name</td>";
+echo "<td>photo</td>";
+echo "<td>desc</td>";
+echo "<td>price</td>";
+echo "<td>qty</td>";
+echo "</tr>";
+for ($i=0; $i<$goodies_len; $i++) {
+	echo "<tr>";
+	echo "<td>";
+	
+	echo "</td>";
+	echo "</tr>";
+}
+echo "";
 
 ?>
