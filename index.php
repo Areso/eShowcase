@@ -74,7 +74,6 @@ while($row = mysqli_fetch_array($query)) {
 	}
 }
 $goodies_len = sizeof($skus);
-
 echo "<html>";
 echo "<head>";
 echo "<title>";
@@ -100,7 +99,7 @@ echo "<br>";
 echo "<div class='menuone'>group 2</div>";
 echo "</div>";
 echo "<div class='goods'>";
-echo "<table>";
+echo "<table border='1'>";
 echo "<tr>";
 echo "<td>SKU</td>";
 echo "<td>item name</td>";
@@ -112,9 +111,35 @@ echo "<td>qty</td>";
 echo "</tr>";
 for ($i=0; $i<$goodies_len; $i++) {
 	echo "<tr>";
+
 	echo "<td>";
-	
+	echo $skus[$i];
 	echo "</td>";
+
+        echo "<td>";
+        echo $names[$i];
+        echo "</td>";
+
+        echo "<td>";
+        echo $groups[$i];
+        echo "</td>";
+
+        echo "<td>";
+        echo $photos[$i];
+        echo "</td>";
+
+        echo "<td>";
+        echo $descs[$i];
+        echo "</td>";
+
+        echo "<td>";
+        echo $prices[$i];
+        echo "</td>";
+
+        echo "<td>";
+        echo $qtys[$i];
+        echo "</td>";
+
 	echo "</tr>";
 }
 echo "";
