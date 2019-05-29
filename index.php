@@ -48,29 +48,29 @@ while($row = mysqli_fetch_array($query)) {
 			array_push($skus, $sku);
 		}
 		if ($i==2) {
-                        $item_name = $row[mysqli_fetch_field_direct($query, $i)->name];
-                        array_push($names, $item_name);
-                }
-                if ($i==3) {
-                        $group_name = $row[mysqli_fetch_field_direct($query, $i)->name];
-                        array_push($groups, $group_name);
-                }
-                if ($i==4) {
-                        $photo = $row[mysqli_fetch_field_direct($query, $i)->name];
-                        array_push($photos, $photo);
-                }
-                if ($i==5) {
-                        $desc = $row[mysqli_fetch_field_direct($query, $i)->name];
-                        array_push($descs, $desc);
-                }
-                if ($i==6) {
-                        $price = $row[mysqli_fetch_field_direct($query, $i)->name];
-                        array_push($prices, $price);
-                }
-                if ($i==7) {
-                        $qty = $row[mysqli_fetch_field_direct($query, $i)->name];
-                        array_push($qtys, $qty);
-                }
+              $item_name = $row[mysqli_fetch_field_direct($query, $i)->name];
+              array_push($names, $item_name);
+        }
+        if ($i==3) {
+              $group_name = $row[mysqli_fetch_field_direct($query, $i)->name];
+              array_push($groups, $group_name);
+        }
+        if ($i==4) {
+              $photo = $row[mysqli_fetch_field_direct($query, $i)->name];
+              array_push($photos, $photo);
+        }
+        if ($i==5) {
+              $desc = $row[mysqli_fetch_field_direct($query, $i)->name];
+              array_push($descs, $desc);
+        }
+        if ($i==6) {
+              $price = $row[mysqli_fetch_field_direct($query, $i)->name];
+              array_push($prices, $price);
+        }
+        if ($i==7) {
+              $qty = $row[mysqli_fetch_field_direct($query, $i)->name];
+              array_push($qtys, $qty);
+        }
 	}
 }
 $goodies_len = sizeof($skus);
@@ -125,7 +125,7 @@ for ($i=0; $i<$goodies_len; $i++) {
         echo "</td>";
 
         echo "<td>";
-        echo $photos[$i];
+        echo "<img src='images/$photos[$i]'></img>";
         echo "</td>";
 
         echo "<td>";
