@@ -142,6 +142,7 @@ for ($i=0; $i<$goodies_len; $i++) {
 
 	echo "</tr>";
 }
-echo "";
-
+echo "</table>";
+echo "</body>";
+echo "</html>";
 ?>
