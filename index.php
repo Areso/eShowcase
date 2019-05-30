@@ -142,7 +142,7 @@ for ($i=0; $i<$goodies_len; $i++) {
     echo "</td>";
 
     echo "<td>";
-    echo "<input type='text' id='input'".$skus[$i]." name='qtyToBuy' size='5'>";
+    echo "<input type='text' id='input".$skus[$i]."' name='qtyToBuy' size='5'>";
 	echo "</tr>";
 }
 echo "</table>";
