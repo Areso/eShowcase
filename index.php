@@ -108,6 +108,7 @@ echo "<td>photo</td>";
 echo "<td>desc</td>";
 echo "<td>price</td>";
 echo "<td>qty</td>";
+echo "<td>qty to buy</td>";
 echo "</tr>";
 for ($i=0; $i<$goodies_len; $i++) {
 	echo "<tr>";
@@ -116,33 +117,36 @@ for ($i=0; $i<$goodies_len; $i++) {
 	echo $skus[$i];
 	echo "</td>";
 
-        echo "<td>";
-        echo $names[$i];
-        echo "</td>";
+    echo "<td>";
+    echo $names[$i];
+    echo "</td>";
 
-        echo "<td>";
-        echo $groups[$i];
-        echo "</td>";
+    echo "<td>";
+    echo $groups[$i];
+    echo "</td>";
 
-        echo "<td>";
-        echo "<img src='images/$photos[$i]'></img>";
-        echo "</td>";
+    echo "<td>";
+    echo "<img src='images/$photos[$i]'></img>";
+    echo "</td>";
 
-        echo "<td>";
-        echo $descs[$i];
-        echo "</td>";
+    echo "<td>";
+    echo $descs[$i];
+    echo "</td>";
 
-        echo "<td>";
-        echo $prices[$i];
-        echo "</td>";
+    echo "<td>";
+    echo $prices[$i];
+    echo "</td>";
 
-        echo "<td>";
-        echo $qtys[$i];
-        echo "</td>";
+    echo "<td>";
+    echo $qtys[$i];
+    echo "</td>";
 
+    echo "<td>";
+    echo "<input type='text' id='input'".$skus[$i]." name='qtyToBuy' size='5'>";
 	echo "</tr>";
 }
 echo "</table>";
+echo "</div>";
 echo "</body>";
 echo "</html>";
 ?>
