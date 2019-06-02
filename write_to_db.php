@@ -35,8 +35,9 @@ if (!mysqli_set_charset($conn, "utf8")) {
     //printf("Current character set: %s\n", mysqli_character_set_name($conn));
 }
 
-$query_line = "INSERT INTO orders (order_txt, order_date, is_ack) VALUES (".$orderToInsert.", now(), 0)";
-$query = mysqli_query($conn, $query_line) or die("Query error while checking EMAIL: ".mysqli_connect_error($conn).mysqli_errno($conn).mysqli_error($conn));
+$query_line = "INSERT INTO orders (order_txt, order_date, is_ack) VALUES ('".$orderToInsert."', now(), 0)";
+$query = mysqli_query($conn, $query_line) or
+            die("query error while inserting new order: ".mysqli_connect_error($conn).mysqli_errno($conn).mysqli_error($conn).'X'.$query_line);
 
 echo "success";
 ?>
