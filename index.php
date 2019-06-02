@@ -79,6 +79,7 @@ echo "<head>";
 echo "<title>";
 echo "eShop";
 echo "</title>";
+echo "<meta charset='UTF-8'>";
 echo "<style type='text/css'>";
 echo ".menu {";
 echo "  position:absolute;";
@@ -143,11 +144,14 @@ for ($i=0; $i<$goodies_len; $i++) {
     echo "</td>";
 
     echo "<td>";
-    echo "<input type='text' id='input".$skus[$i]."' name='qtyToBuy' size='5'>";
+    echo "<input type='text' id='input".$skus[$i]."' name='qtyToBuy' size='5' value='0'>";
 	echo "</tr>";
 }
 echo "</table>";
 echo "<button onclick='makeOrder()'>Сформировать заказ</button>";
+echo "<br>";
+echo "<br>";
+echo "ИП Пермина К.И. ИНН 667116868763 ОГРНИП 315665800056070";
 echo "</div>";
 echo "</body>";
 echo "</html>";

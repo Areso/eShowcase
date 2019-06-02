@@ -6,7 +6,7 @@
                 // deal with inputs[index] element.
                 sku = inputs[index].id;
                 qty = inputs[index].value;
-                if (qty !=='0') {
+                if (qty !=='0' && qty !== '' && qty>0) {
                     sku = sku.replace('input', '');
                     order_line= 'ordered sku is '+sku+' , ordered number is '+qty+' ;';
                     console.log(order_line);
@@ -14,8 +14,8 @@
                 }
         }
         if (sending_data.length > 0) {
-            email = prompt('please type your email');
-            phone = prompt('please type your phone number');
+            email = prompt('Пожалуйста, введите ваш email');
+            phone = prompt('Пожалуйста, введите ваш номер телефона');
             sending_data.push(email);
             sending_data.push(phone);
             sendOrder();
@@ -27,6 +27,9 @@
             if (this.readyState == 4 && this.status == 200) {
                 server_response = this.responseText;
                 console.log(server_response);
+                if (server_response==='success') {
+                    alert('Ваш заказ успешно отравлен в магазин');
+                }
             }
         };
         xhttp.open("POST", "write_to_db.php", true);
