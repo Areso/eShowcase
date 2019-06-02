@@ -146,7 +146,7 @@ for ($i=0; $i<$goodies_len; $i++) {
 	echo "</tr>";
 }
 echo "</table>";
-echo "<button onclick='makeOrder()'>Сформировать заказ</button>"
+echo "<button onclick='makeOrder()'>Сформировать заказ</button>";
 echo "</div>";
 echo "</body>";
 echo "</html>";
