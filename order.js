@@ -1,4 +1,4 @@
- function makeOrder() {
+function makeOrder() {
         var inputs, index;
         sending_data = [];
         inputs = document.getElementsByTagName('input');
@@ -20,8 +20,8 @@
             sending_data.push(phone);
             sendOrder();
         }
-    }
-    function sendOrder() {
+}
+function sendOrder() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -35,8 +35,8 @@
         xhttp.open("POST", "write_to_db.php", true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send('dataToParse='+sending_data);
-    }
-	function openTab(evt, tabName) {
+}
+function openTab(evt, tabName) {
 		var i, tabcontent, tablinks;
 		tabcontent = document.getElementsByClassName("tabcontent");
 		for (i = 0; i < tabcontent.length; i++) {
@@ -48,6 +48,7 @@
 		}
 		document.getElementById(tabName).style.display = "block";
 		evt.currentTarget.className += " active";
-	}
-	// Get the element with id="defaultOpen" and click on it
+		console.log("opentab");
+}
+// Get the element with id="defaultOpen" and click on it
 document.getElementById("tabCity").click();
