@@ -29,7 +29,7 @@ $query_line = "SELECT
  FROM goods
  WHERE id_group = 1";
 
-$query = mysqli_query($conn, $query_line) or die("Query error while checking EMAIL: ".mysqli_connect_error($conn).mysqli_errno($conn).mysqli_error($conn));
+$query = mysqli_query($conn, $query_line) or die("Query error while checking goods: ".mysqli_connect_error($conn).mysqli_errno($conn).mysqli_error($conn));
 $field = mysqli_field_count($conn);
 
 $skus     = [];
@@ -74,6 +74,27 @@ while($row = mysqli_fetch_array($query)) {
 	}
 }
 $goodies_len = sizeof($skus);
+
+$query_line_cat = "select * from groups";
+$query_cat = mysqli_query($conn, $query_line_cat) or die("Query error while checking categories: ".mysqli_connect_error($conn).mysqli_errno($conn).mysqli_error($conn));
+$field_cat = mysqli_field_count($conn);
+
+$id_groups      = [];
+$name_groups    = [];
+
+while($row = mysqli_fetch_array($query)) {
+    for($i = 0; $i < $field; $i++) {
+        if ($i==0) {
+            $id_group = $row[mysqli_fetch_field_direct($query, $i)->name];
+            array_push($id_groups, $id_group);
+        }
+        if ($i==1) {
+            $name_group = $row[mysqli_fetch_field_direct($query, $i)->name];
+            array_push($name_groups, $name_group);
+        }
+
+
+
 echo "<html>";
 echo "<head>";
 echo "<title>";
