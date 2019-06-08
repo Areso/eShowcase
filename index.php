@@ -122,7 +122,7 @@ echo "<body>";
 //echo "<br>";
 //echo "<div class='menuone'>group 2</div>";
 //echo "</div>";
-echo "<div class='tab'>"
+echo "<div class='tab'>";
 echo "<button class='tablinks' onclick='openTab(event, 'Main')' id='tabCity'>Main</button>";
 echo "<button class='tablinks' onclick='openTab(event, 'Explore')' id='tabExplore'>Explore</button>";
 echo "</div>";
