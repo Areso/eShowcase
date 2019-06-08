@@ -94,6 +94,7 @@ while($row = mysqli_fetch_array($query)) {
         }
 	}
 }
+$cat_len = sizeof($id_group);
 
 echo "<html>";
 echo "<head>";
@@ -121,6 +122,14 @@ echo "<body>";
 //echo "<br>";
 //echo "<div class='menuone'>group 2</div>";
 //echo "</div>";
+echo "<div class='tab'>"
+echo "<button class='tablinks' onclick='openTab(event, 'Main')' id='tabCity'>Main</button>";
+echo "<button class='tablinks' onclick='openTab(event, 'Explore')' id='tabExplore'>Explore</button>";
+echo "</div>";
+echo "<div id='Main' class='tabcontent'>";
+echo "</div>";
+echo "<div id='Explore' class='tabcontent'>";
+echo "</div>";
 echo "<div class='goods'>";
 echo "<table border='1'>";
 echo "<tr>";
