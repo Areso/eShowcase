@@ -92,8 +92,8 @@ while($row = mysqli_fetch_array($query)) {
             $name_group = $row[mysqli_fetch_field_direct($query, $i)->name];
             array_push($name_groups, $name_group);
         }
-
-
+	}
+}
 
 echo "<html>";
 echo "<head>";
