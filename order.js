@@ -50,5 +50,6 @@ function openTab(evt, tabName) {
 		evt.currentTarget.className += " active";
 		console.log("opentab");
 }
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("tabCity").click();
+//var el = document.getElementById("tabCity");
+//el.addEventListener("onclick", 'openTab(event,'Main')' , false);
+//document.getElementById("tabCity").click();
