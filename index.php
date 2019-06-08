@@ -113,7 +113,7 @@ echo "	left: 100px;";
 echo "}";
 echo "</style>";
 echo "</head>";
-echo "<script src='order.js'></script>";
+//echo "<script src='order.js'></script>";
 echo "<body>";
 //echo "<div id='logo'>logotype.png</div>";
 //echo "<div id='myheader'>eShop</div>";
