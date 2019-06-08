@@ -124,9 +124,9 @@ echo "<body>";
 //echo "</div>";
 
 echo "<div class='tab'>";
-echo "<button id='tabCity'    >Main   </button>";
+echo "<button id='tabCity'    class='tablinks' >Main   </button>";
 //class='tablinks' onclick='openTab(event,'Main')' 
-echo "<button id='tabExplore' >Explore</button>";
+echo "<button id='tabExplore' class='tablinks' >Explore</button>";
 //class='tablinks' onclick='openTab(event,'Explore')' 
 echo "</div>";
 echo "<div id='Main' class='tabcontent'>";
