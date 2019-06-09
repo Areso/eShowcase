@@ -125,68 +125,69 @@ echo "<body>";
 //echo "</div>";
 
 echo "<div class='tab'>";
-echo "<button id='tabCity'     class='tablinks' onclick=\"openTab(event, 'Main')\"      >Main    </button>";
-echo "<button id='tabSettings' class='tablinks' onclick=\"openTab(event, 'Settings')\"  >Settings</button>";
+echo "<button id='tabCity'      class='tablinks' onclick=\"openTab(event, 'Main')\"       >Главная</button>";
+echo "<button id='tabCategory1' class='tablinks' onclick=\"openTab(event, 'Category1')\"  >$name_groups[0]</button>";
 echo "</div>";
 echo "<div id='Main' class='tabcontent'>";
-echo "Пожалуйста, выберите категорию товаров";
+echo "Пожалуйста, выберите категорию товаров в меню сверху!";
 echo "</div>";
-echo "<div id='Settings' class='tabcontent'>";
-echo "Выберите";
+echo "<div id='Category1' class='tabcontent'>";
+	echo "<div class='goods'>";
+		echo "<table border='1'>";
+		echo "<tr>";
+		echo "<td>SKU</td>";
+		echo "<td>Название</td>";
+		echo "<td>Код производителя</td>";
+		echo "<td>Фото</td>";
+		echo "<td>Описание</td>";
+		echo "<td>Цена</td>";
+		echo "<td>Количество</td>";
+		echo "<td>Кол-во к покупке</td>";
+		echo "</tr>";
+		for ($i=0; $i<$goodies_len; $i++) {
+			echo "<tr>";
+
+			echo "<td>";
+			echo $skus[$i];
+			echo "</td>";
+
+			echo "<td>";
+			echo $names[$i];
+			echo "</td>";
+
+			echo "<td>";
+			echo $groups[$i];
+			echo "</td>";
+
+			echo "<td>";
+			echo "<img src='images/$photos[$i]'></img>";
+			echo "</td>";
+
+			echo "<td>";
+			echo $descs[$i];
+			echo "</td>";
+
+			echo "<td>";
+			echo $prices[$i];
+			echo "</td>";
+
+			echo "<td>";
+			echo $qtys[$i];
+			echo "</td>";
+
+			echo "<td>";
+			echo "<input type='text' id='input".$skus[$i]."' name='qtyToBuy' size='5' value='0'>";
+			echo "</tr>";
+		}
+		echo "</table>";
+	echo "<button onclick='makeOrder()'>Сформировать заказ</button>";
+	echo "<br>";
+	echo "<br>";
+	echo "</div>";
 echo "</div>";
-echo "<div class='goods'>";
-echo "<table border='1'>";
-echo "<tr>";
-echo "<td>SKU</td>";
-echo "<td>Название</td>";
-echo "<td>Код производителя</td>";
-echo "<td>Фото</td>";
-echo "<td>Описание</td>";
-echo "<td>Цена</td>";
-echo "<td>Количество</td>";
-echo "<td>Кол-во к покупке</td>";
-echo "</tr>";
-for ($i=0; $i<$goodies_len; $i++) {
-	echo "<tr>";
 
-	echo "<td>";
-	echo $skus[$i];
-	echo "</td>";
 
-    echo "<td>";
-    echo $names[$i];
-    echo "</td>";
-
-    echo "<td>";
-    echo $groups[$i];
-    echo "</td>";
-
-    echo "<td>";
-    echo "<img src='images/$photos[$i]'></img>";
-    echo "</td>";
-
-    echo "<td>";
-    echo $descs[$i];
-    echo "</td>";
-
-    echo "<td>";
-    echo $prices[$i];
-    echo "</td>";
-
-    echo "<td>";
-    echo $qtys[$i];
-    echo "</td>";
-
-    echo "<td>";
-    echo "<input type='text' id='input".$skus[$i]."' name='qtyToBuy' size='5' value='0'>";
-	echo "</tr>";
-}
-echo "</table>";
-echo "<button onclick='makeOrder()'>Сформировать заказ</button>";
-echo "<br>";
-echo "<br>";
 echo "ИП Пермина К.И. ИНН 667116868763 ОГРНИП 315665800056070";
-echo "</div>";
 echo "</body>";
 echo "</html>";
 ?>
