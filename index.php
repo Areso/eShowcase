@@ -82,7 +82,7 @@ $field_cat = mysqli_field_count($conn);
 $id_groups      = [];
 $name_groups    = [];
 
-while($row = mysqli_fetch_array($query)) {
+while($row = mysqli_fetch_array($query_cat)) {
     for($i = 0; $i < $field; $i++) {
         if ($i==0) {
             $id_group = $row[mysqli_fetch_field_direct($query, $i)->name];
