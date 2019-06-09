@@ -125,7 +125,7 @@ echo "<body>";
 //echo "</div>";
 
 echo "<div class='tab'>";
-echo "<button id='tabCity'     class='tablinks' onclick=\"opentab(event, 'Main')\"      >Main    </button>";
+echo "<button id='tabCity'     class='tablinks' onclick=\"openTab(event, 'Main')\"      >Main    </button>";
 echo "<button id='tabSettings' class='tablinks' onclick=\"openTab(event, 'Settings')\"  >Settings</button>";
 echo "</div>";
 echo "<div id='Main' class='tabcontent'>";
