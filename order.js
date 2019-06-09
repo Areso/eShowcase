@@ -50,6 +50,11 @@ function openTab(evt, tabName) {
 		evt.currentTarget.className += " active";
 		console.log("opentab");
 }
-//var el = document.getElementById("tabCity");
-//el.addEventListener("onclick", 'openTab(event,'Main')' , false);
-//document.getElementById("tabCity").click();
+function bodyOnloadHandler() {
+    console.log("body onload");
+    document.getElementById("tabCity").click();
+}
+
+document.onload = function(e) {
+    console.log("window loaded");
+};

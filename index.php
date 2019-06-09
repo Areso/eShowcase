@@ -115,6 +115,7 @@ echo "</style>";
 echo "</head>";
 echo "<script src='order.js'></script>";
 echo "<body>";
+
 //echo "<div id='logo'>logotype.png</div>";
 //echo "<div id='myheader'>eShop</div>";
 //echo "<div id='menu' class='menu'>menu";
@@ -124,13 +125,14 @@ echo "<body>";
 //echo "</div>";
 
 echo "<div class='tab'>";
-
-echo "<button id='tabCity'  class='tablinks' onclick=\"openTab(event,\"Main\")\">Main   </button>";
-//onclick='openTab(event,'Explore')' 
+echo "<button id='tabCity'     class='tablinks' onclick=\"opentab(event, 'Main')\"      >Main    </button>";
+echo "<button id='tabSettings' class='tablinks' onclick=\"openTab(event, 'Settings')\"  >Settings</button>";
 echo "</div>";
 echo "<div id='Main' class='tabcontent'>";
+echo "Пожалуйста, выберите категорию товаров";
 echo "</div>";
-echo "<div id='Explore' class='tabcontent'>";
+echo "<div id='Settings' class='tabcontent'>";
+echo "Выберите";
 echo "</div>";
 echo "<div class='goods'>";
 echo "<table border='1'>";
