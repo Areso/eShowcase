@@ -56,5 +56,11 @@ function bodyOnloadHandler() {
 }
 
 document.onload = function(e) {
-    console.log("window loaded");
+	bodyOnloadHandler();
+    console.log("document loaded");
+};
+
+window.onload = function(e) {
+	bodyOnloadHandler();
+    console.log("document loaded");
 };
