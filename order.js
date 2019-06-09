@@ -62,5 +62,5 @@ document.onload = function(e) {
 
 window.onload = function(e) {
 	bodyOnloadHandler();
-    console.log("document loaded");
+    console.log("window loaded");
 };

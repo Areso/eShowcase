@@ -90,6 +90,7 @@ while($row = mysqli_fetch_array($query_cat)) {
         }
         if ($i==1) {
             $name_group = $row[mysqli_fetch_field_direct($query, $i)->name];
+            echo $name_group; //DEBUG!
             array_push($name_groups, $name_group);
         }
 	}
