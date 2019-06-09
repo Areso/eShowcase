@@ -94,8 +94,8 @@ while($row = mysqli_fetch_array($query)) {
         }
 	}
 }
-$cat_len = sizeof($id_group);
-
+$cat_len = sizeof($id_groups);
+echo "the size of categories is ".$cat_len;
 echo "<html>";
 echo "<head>";
 echo "<title>";
