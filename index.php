@@ -86,11 +86,11 @@ while($row = mysqli_fetch_array($query_cat)) {
     for($i = 0; $i < $field_cat; $i++) {
 		
         if ($i==0) {
-            $id_group = $row[mysqli_fetch_field_direct($query, $i)->name];
+            $id_group = $row[mysqli_fetch_field_direct($query_cat, $i)->name];
             array_push($id_groups, $id_group);
         }
         if ($i==1) {
-            $name_group = $row[mysqli_fetch_field_direct($query, $i)->name];
+            $name_group = $row[mysqli_fetch_field_direct($query_cat, $i)->name];
             echo "name group is ".$name_group; //DEBUG!
             array_push($name_groups, $name_group);
         }
