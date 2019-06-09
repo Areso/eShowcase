@@ -14,8 +14,10 @@ function makeOrder() {
                 }
         }
         if (sending_data.length > 0) {
-            email = prompt('Пожалуйста, введите ваш email');
-            phone = prompt('Пожалуйста, введите ваш номер телефона');
+			customer = prompt('Пожалуйста, ваше ФИО');
+            email    = prompt('Пожалуйста, введите ваш email');
+            phone    = prompt('Пожалуйста, введите ваш номер телефона');
+            sending_data.push(customer);
             sending_data.push(email);
             sending_data.push(phone);
             sendOrder();

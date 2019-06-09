@@ -117,7 +117,7 @@ echo "</style>";
 echo "</head>";
 echo "<script src='order.js'></script>";
 echo "<body>";
-
+echo "<div id='page'>";
 //echo "<div id='logo'>logotype.png</div>";
 //echo "<div id='myheader'>eShop</div>";
 //echo "<div id='menu' class='menu'>menu";
@@ -139,7 +139,7 @@ echo "<div id='Category1' class='tabcontent'>";
 		echo "<tr>";
 		echo "<td>SKU</td>";
 		echo "<td>Название</td>";
-		echo "<td>Код производителя</td>";
+		//echo "<td>Код производителя</td>";
 		echo "<td>Фото</td>";
 		echo "<td>Описание</td>";
 		echo "<td>Цена</td>";
@@ -157,12 +157,12 @@ echo "<div id='Category1' class='tabcontent'>";
 			echo $names[$i];
 			echo "</td>";
 
-			echo "<td>";
-			echo $groups[$i];
-			echo "</td>";
+			//echo "<td>";
+			//echo $groups[$i];
+			//echo "</td>";
 
 			echo "<td>";
-			echo "<img src='images/$photos[$i]'></img>";
+			echo "<img src='images/$groups[$i]/$photos[$i]'></img>";
 			echo "</td>";
 
 			echo "<td>";
@@ -190,6 +190,7 @@ echo "</div>";
 
 
 echo "ИП Пермина К.И. ИНН 667116868763 ОГРНИП 315665800056070";
+echo "</div>";
 echo "</body>";
 echo "</html>";
 ?>
