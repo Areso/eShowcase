@@ -78,7 +78,7 @@ $goodies_len = sizeof($skus);
 $query_line_cat = "select * from groups";
 $query_cat = mysqli_query($conn, $query_line_cat) or die("Query error while checking categories: ".mysqli_connect_error($conn).mysqli_errno($conn).mysqli_error($conn));
 $field_cat = mysqli_field_count($conn);
-
+echo "field number is ".$field_cat;//DEBUG
 $id_groups      = [];
 $name_groups    = [];
 
