@@ -8,7 +8,7 @@ function makeOrder() {
                 qty = inputs[index].value;
                 if (qty !=='0' && qty !== '' && qty>0) {
                     sku = sku.replace('input', '');
-                    order_line= 'ordered sku is '+sku+' , ordered number is '+qty+' ;';
+                    order_line= 'ordered sku is '+sku+' , ordered number is '+qty+' ;\r\n';
                     console.log(order_line);
                     sending_data.push(order_line);
                 }
@@ -17,9 +17,9 @@ function makeOrder() {
 			customer = prompt('Пожалуйста, ваше ФИО');
             email    = prompt('Пожалуйста, введите ваш email');
             phone    = prompt('Пожалуйста, введите ваш номер телефона');
-            sending_data.push(customer);
-            sending_data.push(email);
-            sending_data.push(phone);
+            sending_data.push(customer+' ;\r\n');
+            sending_data.push(email+' ;\r\n');
+            sending_data.push(phone+' ;\r\n');
             sendOrder();
         }
 }

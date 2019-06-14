@@ -84,7 +84,11 @@ for($i = 0; $i < $cat_len; $i++) {
 echo "</div>";
 echo "<div id='Main' class='tabcontent'>";
 echo "Пожалуйста, выберите категорию товаров в меню сверху!<br>";
-echo "ИП Пермина К.И. ИНН 667116868763 ОГРНИП 315665800056070";
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "По всем вопросам пишите на <a href='mailto:info@discont.org'>info@discont.org</a>";
+//echo "ИП Пермина К.И. ИНН 667116868763 ОГРНИП 315665800056070";
 echo "</div>";
 
 for($y = 0; $y < $cat_len+1; $y++) {
@@ -193,16 +197,14 @@ for($y = 0; $y < $cat_len+1; $y++) {
 		echo "<br>";
 		echo "<br>";
 		echo "<br>";
-		echo "ИП Пермина К.И. ИНН 667116868763 ОГРНИП 315665800056070";
+		//echo "ИП Пермина К.И. ИНН 667116868763 ОГРНИП 315665800056070";
+		echo "По всем вопросам пишите на <a href='mailto:info@discont.org'>info@discont.org</a>";
 		echo "</div>";
 		echo "</div>";
 	} else {
 		//!
 	}
 }
-	
-
-
 echo "</div>";
 echo "</body>";
 echo "</html>";
