@@ -60,7 +60,7 @@
 				  if ($auth == 0) {
 					  echo '<a href="login.php" accesskey="3" title="Вход/регистрация" class="link">Вход/регистрация</a>';
 				  } else {
-					  echo '<a href="workers.php" accesskey="3" title="Резюме" class="link">Резюме</a>';
+					  echo '<a href="goods.php" accesskey="3" title="Товары" class="link">Товары</a>';
 					  echo '<a href="settings.php" accesskey="4" title="Настройки" class="link">Настройки</a>';
 					  echo '<a href="site-backend/logout.php" accesskey="5" title="Выход" class="link">Выход</a>';
 				  }
