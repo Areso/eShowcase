@@ -1,6 +1,7 @@
 .idea/
 config.php
 config.txt
+log.txt
 *.jpg
 *.jpeg
 *.png

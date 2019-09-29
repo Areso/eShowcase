@@ -1,8 +1,0 @@
-
-\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';login_session is test5 and query is 
-select * from accounts where email='test5';
-&fullname=&phonenumber=&is_blocked=1login_session is test5 and query is 
-select * from accounts where email='test5';
-&fullname=&phonenumber=&is_blocked=1\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=0
