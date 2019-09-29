@@ -1,4 +1,8 @@
 .idea/
 config.php
 config.txt
+*.jpg
+*.jpeg
+*.png
+*.zip
 *~

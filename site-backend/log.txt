@@ -1,52 +1,8 @@
- -
-\r\nUPDATE accounts (date_of_lastLogin) VALUES (now()) WHERE email=test4;\r\nUPDATE accounts (date_of_lastLogin) VALUES (now()) WHERE email='test4';\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';\r\nupdate accounts set fullname='Вася', 
-                                         phone_number='9996213000',
-                                         date_of_lastUpdate=now() 
-                                         WHERE email='test4';login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is  and query is 
-select * from accounts where email='';
-&fullname=&phonenumber=&is_blocked=login_session is  and query is 
-select * from accounts where email='';
-&fullname=&phonenumber=&is_blocked=\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1\r\nupdate accounts set fullname='Вася', 
-                                         phone_number='9996213000',
-                                         date_of_lastUpdate=now() 
-                                         WHERE email='test4';login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';login_session is test4 and query is 
-select * from accounts where email='test4';
-&fullname=Вася&phonenumber=9996213000&is_blocked=1login_session is test4 and query is 
+
+\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';login_session is test5 and query is 
+select * from accounts where email='test5';
+&fullname=&phonenumber=&is_blocked=1login_session is test5 and query is 
+select * from accounts where email='test5';
+&fullname=&phonenumber=&is_blocked=1\r\nUPDATE accounts SET date_of_lastLogin=now() WHERE email='test4';login_session is test4 and query is 
 select * from accounts where email='test4';
 &fullname=Вася&phonenumber=9996213000&is_blocked=0
